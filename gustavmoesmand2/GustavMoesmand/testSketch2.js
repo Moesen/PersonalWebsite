@@ -1,26 +1,21 @@
 /* Other stuff */
 
 var img;
-function preLoad(){
-	img = loadImpage("/assets/");
-
+function preload() {
+	img = loadImage('testPic.jpg');
 }
 
 function setup() {
-  createCanvas(800, 400);
+	createCanvas(800, 400);
 
-  noLoop();
 }
 
 function draw() {
-	fill(0);
-	rect(0,0,400,400);
-
-  	console.log(img == null);
-}
-
-function mousePressed(){
+	background(0);
+	image(img, 0, 0);
 
 }
 
+function sort(){
 
+}
